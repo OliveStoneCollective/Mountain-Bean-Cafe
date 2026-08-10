@@ -1,1 +1,207 @@
+/* ======================================= */
+/* Mountain Bean Cafe - Main Stylesheet    */
+/* ======================================= */
 
+
+/* Base Page Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #2f241f;
+  background-color: #f7f2ea;
+  line-height: 1.6;
+}
+
+
+/* ======================================= */
+/* SITE HEADER                             */
+/* ======================================= */
+
+.site-header {
+  background-color: #f7f2ea;
+  padding: 1rem 5%;
+}
+
+
+/* Logo */
+
+.logo {
+  display: block;
+  width: 8rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/* ======================================= */
+/* NAVIGATION                              */
+/* ======================================= */
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.main-nav li {
+  text-align: center;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #2f241f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #4f634c;
+}
+
+
+/* ======================================= */
+/* HERO SECTION                            */
+/* ======================================= */
+
+.hero {
+  position: relative;
+
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 3rem 1.5rem;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../images/hero-coffee.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Hero Text Container */
+
+.hero-content {
+  max-width: 45rem;
+  color: white;
+}
+
+
+/* Hero Main Headline */
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+
+/* Hero Sub-headline */
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+
+/* Hero Paragraph */
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+/* ======================================= */
+/* PRIMARY CTA BUTTON                      */
+/* ======================================= */
+
+.btn-primary {
+  display: inline-block;
+
+  background-color: #c9824a;
+  color: white;
+
+  padding: 0.9rem 1.5rem;
+
+  border-radius: 0.3rem;
+
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #a96436;
+}
+
+
+/* ======================================= */
+/* FOOTER                                  */
+/* ======================================= */
+
+.site-footer {
+  background-color: #2f241f;
+  color: white;
+
+  text-align: center;
+
+  padding: 1.5rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+
+/* ======================================= */
+/* DESKTOP STYLES                          */
+/* ======================================= */
+
+@media (min-width: 768px) {
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .main-nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .main-nav li {
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.75rem;
+  }
+
+}
